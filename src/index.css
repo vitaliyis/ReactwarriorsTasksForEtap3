@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title {
+  color: #ff8717;
+}
+
+p.title{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 286px;
+  position: relative;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Бегунок в Хроме */
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000;
+  border: 1px solid #000;
+  height: 35px;
+  width: 40px;
+  border-radius: 3px;
+  background: lightgray;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+/* Полоса в Хроме */
+input[type=range]::-webkit-slider-runnable-track {
+  height: 18px;
+  cursor: pointer;
+  animate: 0.2s;
+  border: 1px solid #575656;
+  background: lightgray;
+}
